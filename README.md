@@ -4,6 +4,8 @@ DataWarehouse Final-term Discription
 
 
 ---
+###ARCHITETURE
+![](http://files.cnblogs.com/files/guguli/DW-ARCH.gif)
 
 ###Project Structure
 	----- Description --
@@ -17,3 +19,4 @@ DataWarehouse Final-term Discription
       --- Interaction --
      |
       --- README.md
+
