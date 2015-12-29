@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dwQueryWeb:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="jinmin-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="dwQueryWeb:war exploded" />
+    </root>
+  </artifact>
+</component>

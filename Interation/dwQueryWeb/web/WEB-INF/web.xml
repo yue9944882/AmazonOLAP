@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>RDBMSServlet</servlet-name>
+        <servlet-class>HandleRDBMS</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RDBMSServlet</servlet-name>
+        <url-pattern>/rdbms</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HiveServlet</servlet-name>
+        <servlet-class>HandleHive</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HiveServlet</servlet-name>
+        <url-pattern>/hive</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HBaseServlet</servlet-name>
+        <servlet-class>HandleHBase</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HBaseServlet</servlet-name>
+        <url-pattern>/hbase</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
+
