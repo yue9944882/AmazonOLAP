@@ -1,0 +1,13 @@
+create external table hive_dwDimDirector(dimDirectorId string,dimDirectorName string) stored by 'org.apache.hadoop.hive.hbase.HBaseStorageHandler' with serdeproperties("hbase.columns.mapping"=":key,cf:dimDirectorName") tblproperties("hbase.table.name"="hbase_dwDimDirector")
+
+create external table hive_dwDimActor(dimActorId string,dimActorName string) stored by 'org.apache.hadoop.hive.hbase.HBaseStorageHandler' with serdeproperties("hbase.columns.mapping"=":key,cf:dimActorName") tblproperties("hbase.table.name"="hbase_dwDimActor")
+
+create external table hive_dwDimDate(dimDateId string,dimDateYear int,dimDateMonth int,dimDateDay int) stored by 'org.apache.hadoop.hive.hbase.HBaseStorageHandler' with serdeproperties("hbase.columns.mapping"=":key,cf:dimDateYear,cf:dimDateMonth,cf:dimDateDay") tblproperties("hbase.table.name"="hbase_dwDimDate")
+
+create external table hive_dwDimMPAA(mpaaId int,mpaaName int) stored by 'org.apache.hadoop.hive.hbase.HBaseStorageHandler' with serdeproperties("hbase.columns.mapping"=":key,cf:mpaaName") tblproperties("hbase.table.name"="hbase_dwDimMPAA")
+
+create external table hive_dwDimDirectorBridge(dimDBId int,dmDBDId string) stored by 'org.apache.hadoop.hive.hbase.HBaseStorageHandler' with serdeproperties("hbase.columns.mapping"=":key,cf:dimDBDId") tblproperties("hbase.table.name"="hbase_dwDimDirectorBridge")
+
+create external table hive_dwDimStarBridge(dimSBId int,dmSBAId string) stored by 'org.apache.hadoop.hive.hbase.HBaseStorageHandler' with serdeproperties("hbase.columns.mapping"=":key,cf:dimSBAId") tblproperties("hbase.table.name"="hbase_dwDimStarBridge")
+
+create external table hive_dwFactTable(factPK int,factDimDate string,factDimMPAA int,factDimDirectorBridge int,factDimStarBridge int,factDimStyle int,factMovieRef string) stored by 'org.apache.hadoop.hive.hbase.HBaseStorageHandler' with serdeproperties("hbase.columns.mapping"=":key,cf:factDimDate,cf:factDimDirectorBridge,cf:factDimStarBridge,cf:factDimStyle,cf:factMovieRef") tblproperties("hbase.table.name"="hbase_dwFactTable")

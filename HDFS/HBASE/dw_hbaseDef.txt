@@ -1,0 +1,9 @@
+
+
+create 'hbase_dwDimActor','cf'
+create 'hbase_dwDimDirector','cf'
+create 'hbase_dwDimDate','cf'
+create 'hbase_dwDimMPAA','cf'
+create 'hbase_dwDimDirectorBridge','cf'
+create 'hbase_dwDimStarBridge','cf'
+create 'hbase_dwFactTable','cf'
