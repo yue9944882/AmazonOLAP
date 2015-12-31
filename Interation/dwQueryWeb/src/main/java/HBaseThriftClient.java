@@ -15,6 +15,8 @@ import org.apache.hadoop.hbase.thrift.generated.IOError;
 import org.apache.hadoop.hbase.thrift.generated.Mutation;
 import org.apache.hadoop.hbase.thrift.generated.TCell;
 import org.apache.hadoop.hbase.thrift.generated.TRowResult;
+
+
 import org.apache.thrift.TException;
 
 
@@ -110,8 +112,7 @@ public class HBaseThriftClient extends AbstractHBaseThriftService {
 
 
     @Override
-    public int scannerOpen(String table, String startRow, List<String> columns,
-                           Map<String, String> attributes) throws TException {
+    public int scannerOpen(String table, String startRow, List<String> columns, Map<String, String> attributes) throws TException {
         ByteBuffer tableName = wrap(table);
         List<ByteBuffer> fl = encodeColumns(columns);
         Map<ByteBuffer, ByteBuffer> wrappedAttributes = encodeAttributes(attributes);
@@ -119,8 +120,7 @@ public class HBaseThriftClient extends AbstractHBaseThriftService {
     }
 
     @Override
-    public int scannerOpen(String table, String startRow, String stopRow, List<String> columns,
-                           Map<String, String> attributes) throws TException {
+    public int scannerOpen(String table, String startRow, String stopRow, List<String> columns, Map<String, String> attributes) throws TException {
         ByteBuffer tableName = wrap(table);
         List<ByteBuffer> fl = encodeColumns(columns);
         Map<ByteBuffer, ByteBuffer> wrappedAttributes = encodeAttributes(attributes);

@@ -35,4 +35,13 @@ public class HiveQuery {
         }
     }
 
+    public ResultSet doQuery(String sql){
+        try{
+            PreparedStatement stmt=conn.prepareStatement(sql);
+            return stmt.executeQuery();
+        }catch(Exception e){
+            e.printStackTrace();
+            return null;
+        }
+    }
 }

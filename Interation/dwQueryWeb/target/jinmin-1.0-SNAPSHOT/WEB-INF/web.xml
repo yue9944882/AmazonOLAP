@@ -36,6 +36,16 @@
         <url-pattern>/hbase</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ParseServlet</servlet-name>
+        <servlet-class>ParseServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ParseServlet</servlet-name>
+        <url-pattern>/parse</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>
 

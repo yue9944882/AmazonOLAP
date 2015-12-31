@@ -25,7 +25,7 @@ public class HandleRDBMS extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String s=request.getParameter("textv");
         System.out.println(s);
-        RequestDispatcher rd=request.getRequestDispatcher("Report.jsp");
+        RequestDispatcher rd=request.getRequestDispatcher("report.jsp");
         request.setAttribute("newtextv", s);
         //HiveQuery hq=new HiveQuery();
         //hvq.demo();

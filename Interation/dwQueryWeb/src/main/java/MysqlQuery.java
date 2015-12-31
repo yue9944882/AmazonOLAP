@@ -29,7 +29,7 @@ public class MysqlQuery {
         }
     }
 
-    private ResultSet doQuery(String sql){
+    public ResultSet doQuery(String sql){
         try{
             PreparedStatement stmt=conn.prepareStatement(sql);
             return stmt.executeQuery();
