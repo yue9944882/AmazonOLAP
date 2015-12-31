@@ -1,3 +1,5 @@
+import org.omg.PortableServer.IdAssignmentPolicy;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -299,19 +301,41 @@ public class ParseServlet extends HttpServlet {
         String dateTable="hbase_dwHBaseDateIndex";
         String movieTable="hbase_dwMovie";
         String filter="";
+
+
         if(iYearStatus==1){
             if(iyl!=null&&iyr!=null){
-                filter+="(RowFilter(>=,'binary:"+iyl+"')) AND (RowFilter(<=,'binary:"+iyr+"'))";
+                filter="(RowFilter (>=, 'binary:"+iyl+"')) AND (RowFilter (<=, 'binary:"+iyr+"')) ";
+                if(iMonthStatus==1){
+                    if(iml!=null&&imr!=null){
+                        filter="((RowFilter(>=,'binary:"+iyl+"-"+iml+"')) AND (RowFilter(<=,'binary:"+iyr+"-"+imr+"'))) ";
+                    }else if(iml!=null){
+                        filter="((RowFilter(>=,'binary:"+iyl+"-"+iml+"')) AND (RowFilter(<=,'binary:"+iyr+"')))";
+                    }else if(imr!=null){
+                        filter="((RowFilter(>=,'binary:"+iyl+"')) AND (RowFilter(<=,'binary:"+iyr+"-"+imr+"')))";
+                    }else{;}
+                }
             }else if(iyl!=null){
-                filter+="(RowFilter(>=,binary:"+iyl+"))";
+                filter="(RowFilter(>=,binary:"+iyl+")) ";
+                if(iml!=null){
+                    filter="(RowFilter(>=,binary:"+iyl+"-"+iml+")) ";
+                }
             }else if(iyr!=null){
-                filter+="(RowFilter(<=,binary:"+iyr+"))";
+                filter="(RowFilter(<=,binary:"+iyr+")) ";
+                if(imr!=null){
+                    filter="(RowFilter(<=,binary:"+iyr+"-"+imr+")) ";
+                }
             }else{;}
         }
+
+
+
+
 
         System.out.println(filter);
 
         hbq.scanWithFilter(dateTable, filter);
+
         long bms2=System.currentTimeMillis();
         System.out.println("HBASE QUERY ELAPSE TIME:"+(bms2-bms1)/1000+" sec");
         /// - HBASE FINISHED -

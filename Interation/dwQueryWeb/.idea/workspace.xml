@@ -39,12 +39,11 @@
       <file leaf-file-name="ParseServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ParseServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41719747">
-              <caret line="429" column="31" selection-start-line="429" selection-start-column="31" selection-end-line="429" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.5869565">
+              <caret line="307" column="87" selection-start-line="307" selection-start-column="87" selection-end-line="307" selection-end-column="87" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#11818#11829#0" expanded="true" />
-                <element signature="e#19494#19505#0" expanded="true" />
+                <element signature="e#20357#20368#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,8 +52,8 @@
       <file leaf-file-name="report.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/report.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="333" column="0" selection-start-line="333" selection-start-column="0" selection-end-line="333" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.107142">
+              <caret line="332" column="6" selection-start-line="332" selection-start-column="6" selection-end-line="332" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -76,7 +75,6 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <marker date="1451520493818" expanded="true" signature="777:810" placeholder="select count..hive_dwMovie..." />
               </folding>
             </state>
@@ -89,6 +87,7 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
               <folding>
+                <element signature="imports" expanded="false" />
                 <marker date="1451493443867" expanded="true" signature="663:691" placeholder="select count..dwMovie..." />
               </folding>
             </state>
@@ -100,7 +99,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="84" column="65" selection-start-line="84" selection-start-column="65" selection-end-line="84" selection-end-column="65" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#2762#2785#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,7 +125,21 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="158" column="10" selection-start-line="158" selection-start-column="10" selection-end-line="158" selection-end-column="10" />
-              <folding />
+              <folding>
+                <element signature="n#!!doc" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#644#645#0" expanded="false" />
+                <element signature="e#667#668#0" expanded="false" />
+                <element signature="e#722#723#0" expanded="false" />
+                <element signature="e#755#756#0" expanded="false" />
+                <element signature="e#869#877#0" expanded="false" />
+                <element signature="e#1792#1802#0" expanded="false" />
+                <element signature="e#2510#2526#0" expanded="false" />
+                <element signature="e#2903#2913#0" expanded="false" />
+                <element signature="e#3522#3530#0" expanded="false" />
+                <element signature="e#8162#8174#0" expanded="false" />
+                <element signature="e#8902#8914#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,8 +175,8 @@
         <option value="$PROJECT_DIR$/src/main/java/MysqlQuery.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/MovieBean.java" />
-        <option value="$PROJECT_DIR$/web/report.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/HiveQuery.java" />
+        <option value="$PROJECT_DIR$/web/report.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ParseServlet.java" />
       </list>
     </option>
@@ -192,8 +208,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="219" />
+    <option name="y" value="1072" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -220,9 +236,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -337,6 +350,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -717,14 +733,15 @@
       <workItem from="1451474690188" duration="19467000" />
       <workItem from="1451520373314" duration="4584000" />
       <workItem from="1451526686386" duration="3835000" />
+      <workItem from="1451530902753" duration="8865000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55507000" />
+    <option name="totallyTimeSpent" value="64372000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="219" y="1072" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -736,10 +753,10 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45984253" sideWeight="0.48243046" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4472441" sideWeight="0.48243046" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25183016" sideWeight="0.73770493" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14348462" sideWeight="0.73770493" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25183016" sideWeight="0.26229507" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1150,6 +1167,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1451493443867" expanded="true" signature="663:691" placeholder="select count..dwMovie..." />
           </folding>
         </state>
@@ -1177,20 +1195,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/report.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="333" column="0" selection-start-line="333" selection-start-column="0" selection-end-line="333" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/HiveQuery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
             <marker date="1451520493818" expanded="true" signature="777:810" placeholder="select count..hive_dwMovie..." />
           </folding>
         </state>
@@ -1200,7 +1209,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="158" column="10" selection-start-line="158" selection-start-column="10" selection-end-line="158" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#644#645#0" expanded="false" />
+            <element signature="e#667#668#0" expanded="false" />
+            <element signature="e#722#723#0" expanded="false" />
+            <element signature="e#755#756#0" expanded="false" />
+            <element signature="e#869#877#0" expanded="false" />
+            <element signature="e#1792#1802#0" expanded="false" />
+            <element signature="e#2510#2526#0" expanded="false" />
+            <element signature="e#2903#2913#0" expanded="false" />
+            <element signature="e#3522#3530#0" expanded="false" />
+            <element signature="e#8162#8174#0" expanded="false" />
+            <element signature="e#8902#8914#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1208,18 +1231,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="84" column="65" selection-start-line="84" selection-start-column="65" selection-end-line="84" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2762#2785#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/report.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.107142">
+          <caret line="332" column="6" selection-start-line="332" selection-start-column="6" selection-end-line="332" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ParseServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41719747">
-          <caret line="429" column="31" selection-start-line="429" selection-start-column="31" selection-end-line="429" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.5869565">
+          <caret line="307" column="87" selection-start-line="307" selection-start-column="87" selection-end-line="307" selection-end-column="87" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#11818#11829#0" expanded="true" />
-            <element signature="e#19494#19505#0" expanded="true" />
+            <element signature="e#20357#20368#0" expanded="true" />
           </folding>
         </state>
       </provider>
